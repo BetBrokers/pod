@@ -1,0 +1,64 @@
+Lottobits
+
+This is a lottery and gambling system that anonymously utilizes ticket purchases through the transaction hash on the cryptocurrency blockchain, we are starting with lottery and critter game.
+
+How it works
+
+The player deposits the ticket amount into the altcoin address of the day's game, and enters the transaction hash in the database along with the altcoin address information to receive the prize if he wins the draw.
+This is generated through the transaction hash, a single thousand ticket number, and thus the game becomes irreversible, all done directly with altcoins anonymously.
+Our draw takes place every day, and each draw of the day is assigned a different bitcoin address. The prize winner will receive it directly at the bitcoin address entered on their profile.
+
+Only bitcoin transactions sent to the address presented in the game will be awarded, so the player must enter the hash tx of the transaction he has made, otherwise the system will not reward.
+
+Lottery Rules
+
+Who wins:
+    - One of the 5 numbers drawn for the main prizes
+    - Thousands, hundreds and tens of any of the numbers drawn in the top 5 prizes
+    - Tickets whose numbers contain the final dozen identical to one of the previous 3 dozen or the last dozen to the tenth dozen of the number drawn for prize 1, except for the winners for the previous and subsequent 
+    approximation.
+    - The first prize unit.
+
+We run our code on the deep web, and open it to the community to help and play
+
+Bitcoin Contribution
+
+Contribute to keep the project growing:
+122PKv1ekCwMffhiXCfoUC6ARCwH7hSVji
+
+Lottobits deep web link:
+http://2e6p2ldqf533dm4b.onion
+
+
+
+
+Lottobits
+
+Este é sistema de loterias e jogos de azar que utiliza de forma anônima as compras de bilhetes através do hash de transação na blockchain de criptomoedas, estamos iniciando com loteria e jogo do bicho.
+
+Como Funciona
+
+O jogador deposita o valor do bilhete no endereço da altcoin do jogo do dia, e cadastra o hash de transação deste depósito no banco de dados junto com as informações do endereço da altcoin para receber o prêmio, caso ganhe o sorteio. 
+Com isso é gerado através do hash de transação, uma milhar única do número do bilhete, e assim , o jogo se torna irreversível, tudo feito diretamente com altcoins de forma anônima.
+O nosso sorteio acontece todos os dias, e cada sorteio do dia, é estipulado um endereço bitcoin diferente. O ganhador do prêmio receberá diretamente no endereço bitcoin informado no seu perfil.
+
+Apenas transações bitcoin enviadas para o endereço apresentado no jogo que será premiado, portanto o jogador deverá cadastrar o hash tx da transação que ele fez, caso contrário, o sistema não premia.
+
+Regras da loteria
+
+Ganha quem acertar:
+    - Um dos 5 numeros sorteados para os prêmios principais
+    - A milhar, a centena e a dezena de qualquer um dos números sorteados  nos 5 prêmios principais
+    - Bilhetes cujo os números contenham a dezena final idêntica a uma das 3 dezenas anteriores ou das 3 dezenas posteriores à dezena do número sorteado para o prêmio 1, excetuando-se os premiados pela 
+    aproximação anterior e posterior.
+    - A unidade do primeiro prêmio.
+    
+Rodamos nosso código na deep web, e abrimos para a comunidade auxiliar e poder brincar.
+
+Contribuição em bitcoin
+
+Contribuam para que o projeto continue crescendo:
+122PKv1ekCwMffhiXCfoUC6ARCwH7hSVji
+
+Link do Lottobits na deep web:
+http://2e6p2ldqf533dm4b.onion

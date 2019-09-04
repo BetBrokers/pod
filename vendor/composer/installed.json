@@ -1,0 +1,588 @@
+[
+    {
+        "name": "corveda/php-sandbox",
+        "version": "v2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Corveda/PHPSandbox.git",
+            "reference": "d82fe60d58fbc8d01e61facd963296df372eeeb7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Corveda/PHPSandbox/zipball/d82fe60d58fbc8d01e61facd963296df372eeeb7",
+            "reference": "d82fe60d58fbc8d01e61facd963296df372eeeb7",
+            "shasum": ""
+        },
+        "require": {
+            "jeremeamia/functionparser": "*",
+            "nikic/php-parser": "2.*",
+            "php": ">=5.4"
+        },
+        "replace": {
+            "fieryprophet/php-sandbox": "*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.*",
+            "symfony/yaml": "~2.1"
+        },
+        "time": "2016-05-20T20:23:57+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/functions.php"
+            ],
+            "psr-4": {
+                "PHPSandbox\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Elijah Horton",
+                "email": "elijah@corveda.com"
+            },
+            {
+                "name": "Corveda, LLC."
+            }
+        ],
+        "description": "A PHP library that can be used to run PHP code in a sandboxed environment",
+        "homepage": "https://phpsandbox.org/",
+        "keywords": [
+            "blacklist",
+            "parser",
+            "php",
+            "sandbox",
+            "whitelist"
+        ]
+    },
+    {
+        "name": "jeremeamia/FunctionParser",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jeremeamia/FunctionParser.git",
+            "reference": "035b52000b88ea8d72a6647dd4cd39f080cf7ada"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jeremeamia/FunctionParser/zipball/035b52000b88ea8d72a6647dd4cd39f080cf7ada",
+            "reference": "035b52000b88ea8d72a6647dd4cd39f080cf7ada",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2015-02-02T17:30:47+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FunctionParser\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jeremy Lindblom"
+            }
+        ],
+        "description": "Function parser for PHP functions, methods, and closures",
+        "homepage": "https://github.com/jeremeamia/FunctionParser",
+        "keywords": [
+            "closure",
+            "function",
+            "parser",
+            "tokenizer"
+        ]
+    },
+    {
+        "name": "mustache/mustache",
+        "version": "v2.12.0",
+        "version_normalized": "2.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/mustache.php.git",
+            "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/fe8fe72e9d580591854de404cc59a1b83ca4d19e",
+            "reference": "fe8fe72e9d580591854de404cc59a1b83ca4d19e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "~1.11",
+            "phpunit/phpunit": "~3.7|~4.0|~5.0"
+        },
+        "time": "2017-07-11T12:54:05+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mustache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "A Mustache implementation in PHP.",
+        "homepage": "https://github.com/bobthecow/mustache.php",
+        "keywords": [
+            "mustache",
+            "templating"
+        ]
+    },
+    {
+        "name": "nikic/php-parser",
+        "version": "v2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/PHP-Parser.git",
+            "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4dd659edadffdc2143e4753df655d866dbfeedf0",
+            "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0",
+            "shasum": ""
+        },
+        "require": {
+            "ext-tokenizer": "*",
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-09-16T12:04:44+00:00",
+        "bin": [
+            "bin/php-parse"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PhpParser\\": "lib/PhpParser"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov"
+            }
+        ],
+        "description": "A PHP parser written in PHP",
+        "keywords": [
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "paragonie/corner",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paragonie/corner.git",
+            "reference": "6a02dcefde29e795432a9a5850ff6c240dc596d2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paragonie/corner/zipball/6a02dcefde29e795432a9a5850ff6c240dc596d2",
+            "reference": "6a02dcefde29e795432a9a5850ff6c240dc596d2",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7",
+            "vimeo/psalm": "^2"
+        },
+        "time": "2018-12-20T23:52:02+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ParagonIE\\Corner\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "ISC"
+        ],
+        "authors": [
+            {
+                "name": "Paragon Initiative Enterprises",
+                "email": "security@paragonie.com"
+            }
+        ],
+        "description": "Generic PHP Exceptions and Errors, made user-friendly."
+    },
+    {
+        "name": "paragonie/easydb",
+        "version": "v2.9.0",
+        "version_normalized": "2.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paragonie/easydb.git",
+            "reference": "67ee07647f0836d98b31281ea18baf5725627347"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paragonie/easydb/zipball/67ee07647f0836d98b31281ea18baf5725627347",
+            "reference": "67ee07647f0836d98b31281ea18baf5725627347",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "paragonie/corner": "^1|^2",
+            "php": "^7"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^5",
+            "squizlabs/php_codesniffer": "^2.7",
+            "vimeo/psalm": "^1|^2"
+        },
+        "time": "2019-03-12T14:18:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ParagonIE\\EasyDB\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Scott Arciszewski",
+                "email": "scott@paragonie.com",
+                "homepage": "https://paragonie.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Woody Gilk",
+                "homepage": "https://github.com/shadowhand",
+                "role": "Contributor"
+            },
+            {
+                "name": "SignpostMarv",
+                "homepage": "https://github.com/SignpostMarv",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Easy-to-use database abstraction",
+        "keywords": [
+            "database",
+            "pdo",
+            "security",
+            "sql"
+        ]
+    },
+    {
+        "name": "paragonie/random_compat",
+        "version": "v9.99.99",
+        "version_normalized": "9.99.99.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paragonie/random_compat.git",
+            "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+            "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.*|5.*",
+            "vimeo/psalm": "^1"
+        },
+        "suggest": {
+            "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+        },
+        "time": "2018-07-02T15:55:56+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Paragon Initiative Enterprises",
+                "email": "security@paragonie.com",
+                "homepage": "https://paragonie.com"
+            }
+        ],
+        "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+        "keywords": [
+            "csprng",
+            "polyfill",
+            "pseudorandom",
+            "random"
+        ]
+    },
+    {
+        "name": "paragonie/sodium_compat",
+        "version": "v1.10.1",
+        "version_normalized": "1.10.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/paragonie/sodium_compat.git",
+            "reference": "5115fa44886d1c2785d2f135ef4626db868eac4b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/5115fa44886d1c2785d2f135ef4626db868eac4b",
+            "reference": "5115fa44886d1c2785d2f135ef4626db868eac4b",
+            "shasum": ""
+        },
+        "require": {
+            "paragonie/random_compat": ">=1",
+            "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7|^8"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^3|^4|^5"
+        },
+        "suggest": {
+            "ext-libsodium": "PHP < 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security.",
+            "ext-sodium": "PHP >= 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
+        },
+        "time": "2019-07-12T16:36:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "autoload.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "ISC"
+        ],
+        "authors": [
+            {
+                "name": "Paragon Initiative Enterprises",
+                "email": "security@paragonie.com"
+            },
+            {
+                "name": "Frank Denis",
+                "email": "jedisct1@pureftpd.org"
+            }
+        ],
+        "description": "Pure PHP implementation of libsodium; uses the PHP extension if it exists",
+        "keywords": [
+            "Authentication",
+            "BLAKE2b",
+            "ChaCha20",
+            "ChaCha20-Poly1305",
+            "Chapoly",
+            "Curve25519",
+            "Ed25519",
+            "EdDSA",
+            "Edwards-curve Digital Signature Algorithm",
+            "Elliptic Curve Diffie-Hellman",
+            "Poly1305",
+            "Pure-PHP cryptography",
+            "RFC 7748",
+            "RFC 8032",
+            "Salpoly",
+            "Salsa20",
+            "X25519",
+            "XChaCha20-Poly1305",
+            "XSalsa20-Poly1305",
+            "Xchacha20",
+            "Xsalsa20",
+            "aead",
+            "cryptography",
+            "ecdh",
+            "elliptic curve",
+            "elliptic curve cryptography",
+            "encryption",
+            "libsodium",
+            "php",
+            "public-key cryptography",
+            "secret-key cryptography",
+            "side-channel resistant"
+        ]
+    },
+    {
+        "name": "pleonasm/merkle-tree",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pleonasm/merkle-tree.git",
+            "reference": "6abdf5aacd79b6d502f944c96edd1a896ef6039b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pleonasm/merkle-tree/zipball/6abdf5aacd79b6d502f944c96edd1a896ef6039b",
+            "reference": "6abdf5aacd79b6d502f944c96edd1a896ef6039b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "phpunit/php-invoker": "*",
+            "phpunit/phpunit": "^5.7",
+            "satooshi/php-coveralls": "*@dev",
+            "squizlabs/php_codesniffer": "*"
+        },
+        "time": "2017-02-10T15:26:01+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Pleo": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Matt Nagi",
+                "email": "matthew.nagi@base-2.net"
+            }
+        ],
+        "description": "An implementation of a Merkle Tree in PHP"
+    },
+    {
+        "name": "smarty/smarty",
+        "version": "v3.1.33",
+        "version_normalized": "3.1.33.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smarty-php/smarty.git",
+            "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smarty-php/smarty/zipball/dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+            "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2018-09-12T20:54:16+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "libs/bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Monte Ohrt",
+                "email": "monte@ohrt.com"
+            },
+            {
+                "name": "Uwe Tews",
+                "email": "uwe.tews@googlemail.com"
+            },
+            {
+                "name": "Rodney Rehm",
+                "email": "rodney.rehm@medialize.de"
+            }
+        ],
+        "description": "Smarty - the compiling PHP template engine",
+        "homepage": "http://www.smarty.net",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "stephenhill/base58",
+        "version": "v1.1.4",
+        "version_normalized": "1.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stephen-hill/base58php.git",
+            "reference": "75ef7128303def7629d2a4bf9ea9dc378140507c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stephen-hill/base58php/zipball/75ef7128303def7629d2a4bf9ea9dc378140507c",
+            "reference": "75ef7128303def7629d2a4bf9ea9dc378140507c",
+            "shasum": ""
+        },
+        "require-dev": {
+            "athletic/athletic": "~0.1",
+            "phpunit/phpunit": "4.*"
+        },
+        "time": "2016-07-20T20:34:07+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "StephenHill\\": "src/",
+                "StephenHill\\Benchmarks\\": "benchmarks/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Hill",
+                "email": "stephen@gatekiller.co.uk"
+            }
+        ],
+        "description": "Base58 Encoding and Decoding Library for PHP"
+    }
+]

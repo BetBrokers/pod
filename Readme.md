@@ -1,1 +1,0 @@
-# crowdforex-project

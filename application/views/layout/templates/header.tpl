@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Altcoin Casino, Biggest Jackpots! Worldcoin, Megacoin, Blackcoin, Vertcoin, Bitshares, Bitcoin, Litecoin, Dogecoin, Zetacoin, Namecoin, Crypto, Devcoin, Peercoin, Primecoin, Coin Casino, Crypto Casino, Lottery, Dice, Keno!">
+		<meta name="author" content="Cryptic Entertainment">
+
+		<title>Lottobits</title>
+		<link href="http://netdna.bootstrapcdn.com/bootswatch/3.2.0/darkly/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/css/casino.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+		<![endif]-->
+
+		<link id="favicon" rel="shortcut icon" href="http://<?php echo $_SERVER['HTTP_HOST']?>'/lottery/public/assets/images/favicon.ico">
+
+		<style>
+			input[type="radio"] {
+				display: none;
+			}
+			.rollLabel {
+				height: 30px;
+				width: 30px;
+				text-align: center;
+				color: white;
+				border-radius: 20px;
+				line-height: 27px;
+				border: 1px solid white
+			}
+			.orange {
+				background: rgb(247,147,26);
+			}
+			.blue {
+				background: #428bca;
+			}
+			.red {
+				background: #d9534f;
+			}
+			.green {
+				background: #5cb85c;
+			}
+			.grey {
+				background: #5bc0de;
+			}
+			.activeLabel {
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row header">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<h3 class="text-muted pull-left title"><img alt="" src="http://<?php echo $_SERVER['HTTP_HOST'].'/lottery/public/images/lottobits.png'?>">Lottobits</h3>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<ul class="nav nav-pills pull-right">
+						<li><input type="text" class="form-control" id="nick" value="Anonymous"></li>
+						
+						<li class="menu" id="r2"><a href="#!r2">Roll Two</a></li>
+						<li class="menu" id="p3"><a href="#!p3">Pick Three</a></li>
+					</ul>
+				</div>
+			</div>

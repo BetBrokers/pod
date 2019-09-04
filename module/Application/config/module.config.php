@@ -43,7 +43,8 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-            'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/layout'           => __DIR__ . '/../src/Layout/ConfigLayout.php',
+            'broker/layout'           => __DIR__ . '/../../Broker/view/layout/layout.phtml',
             'api/layout'           => __DIR__ . '/../../Api/4mmview/layout/layout.phtml',
             //'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
@@ -57,7 +58,7 @@ return [
     'module_layouts' => [
         'Application' => 'layout/layout',
         'Auth' => 'layout/layout',
-        'Wallet' => 'layout/layout'
-        
+        'Wallet' => 'layout/layout',
+        'Broker' => 'broker/layout'
     ]
 ];

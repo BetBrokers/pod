@@ -1,0 +1,21 @@
+{
+	"name" : "lottobits/lottery",
+	"type" : "library",
+	"autoload" : {
+		"psr-4" : {
+			"PHPlata\\" : "src/",
+			"PHPlata\\Application\\" : "application"
+		}
+	},
+	"require" : {
+		"php" : ">=7.1",
+		"stephenhill/base58" : "^1.1",
+		"paragonie/sodium_compat" : "^1.6",
+		"corveda/php-sandbox" : "^2.0",
+		"pleonasm/merkle-tree" : "^1.0",
+		"paragonie/easydb" : "2.9.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^7"
+	}
+}

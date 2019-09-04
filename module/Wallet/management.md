@@ -1,1 +1,0 @@
-Gerencia arquivos do cms no banco de dados

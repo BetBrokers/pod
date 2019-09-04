@@ -6,6 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Pleo' => array($vendorDir . '/pleonasm/merkle-tree/src'),
-    'Mustache' => array($vendorDir . '/mustache/mustache/src'),
 );

@@ -1,5 +1,5 @@
 {
-	"name" : "lottobits/lottery",
+	"name" : "lottobits/lottobits",
 	"type" : "library",
 	"autoload" : {
 		"psr-4" : {

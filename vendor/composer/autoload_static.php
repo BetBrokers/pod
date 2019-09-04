@@ -7,7 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
 {
     public static $files = array (
-        '350ec649700e6d4fcc83967bb680fcdd' => __DIR__ . '/..' . '/corveda/php-sandbox/src/functions.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'f084d01b0a599f67676cffef638aa95b' => __DIR__ . '/..' . '/smarty/smarty/libs/bootstrap.php',
     );
@@ -20,20 +19,14 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         ),
         'P' => 
         array (
-            'PhpParser\\' => 10,
             'ParagonIE\\EasyDB\\' => 17,
             'ParagonIE\\Corner\\' => 17,
-            'PHPSandbox\\' => 11,
         ),
         'L' => 
         array (
             'Lottobits\\Lottery\\' => 18,
             'Lottobits\\Application\\' => 22,
             'Lottobits\\' => 10,
-        ),
-        'F' => 
-        array (
-            'FunctionParser\\' => 15,
         ),
     );
 
@@ -46,10 +39,6 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         array (
             0 => __DIR__ . '/..' . '/stephenhill/base58/src',
         ),
-        'PhpParser\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
-        ),
         'ParagonIE\\EasyDB\\' => 
         array (
             0 => __DIR__ . '/..' . '/paragonie/easydb/src',
@@ -57,10 +46,6 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         'ParagonIE\\Corner\\' => 
         array (
             0 => __DIR__ . '/..' . '/paragonie/corner/src',
-        ),
-        'PHPSandbox\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/corveda/php-sandbox/src',
         ),
         'Lottobits\\Lottery\\' => 
         array (
@@ -74,27 +59,6 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         array (
             0 => __DIR__ . '/..' . '/lottobits/lottobits/src',
         ),
-        'FunctionParser\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jeremeamia/FunctionParser/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'Pleo' => 
-            array (
-                0 => __DIR__ . '/..' . '/pleonasm/merkle-tree/src',
-            ),
-        ),
-        'M' => 
-        array (
-            'Mustache' => 
-            array (
-                0 => __DIR__ . '/..' . '/mustache/mustache/src',
-            ),
-        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -102,7 +66,6 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit8c0643a397fdff1439a41396c96380c8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit8c0643a397fdff1439a41396c96380c8::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit8c0643a397fdff1439a41396c96380c8::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

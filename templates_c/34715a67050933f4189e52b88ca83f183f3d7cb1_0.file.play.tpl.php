@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-09-04 15:43:07
+/* Smarty version 3.1.33, created on 2019-09-04 19:10:00
   from 'C:\wamp64\www\lottery\application\views\games\lottery\play.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d6fdb8b9fbf41_48300341',
+  'unifunc' => 'content_5d700c0812dda1_16289835',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '34715a67050933f4189e52b88ca83f183f3d7cb1' => 
     array (
       0 => 'C:\\wamp64\\www\\lottery\\application\\views\\games\\lottery\\play.tpl',
-      1 => 1567611742,
+      1 => 1567624102,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d6fdb8b9fbf41_48300341 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d700c0812dda1_16289835 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, ((string)$_smarty_tpl->tpl_vars['views']->value)."/layout/configs/layout.conf", "setup", 0);
 ?>
 
@@ -45,7 +45,8 @@ $_smarty_tpl->smarty->ext->configLoad->_loadConfigFile($_smarty_tpl, ((string)$_
 					<tr>
 						<td class="col-lg-6 col-md-6 col-sm-6 col-xs-12">0.0035465</td>
 						<td class="col-lg-6 col-md-6 col-sm-6 col-xs-12">1</td>
-						<td class="col-lg-6 col-md-6 col-sm-6 col-xs-12">45.86808657</td>
+						<td class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><?php echo $_smarty_tpl->tpl_vars['reward']->value;?>
+</td>
 					</tr>
 
                 </table>

@@ -28,6 +28,10 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
             'Lottobits\\Application\\' => 22,
             'Lottobits\\' => 10,
         ),
+        'B' => 
+        array (
+            'Blockchain\\' => 11,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -58,6 +62,10 @@ class ComposerStaticInit8c0643a397fdff1439a41396c96380c8
         'Lottobits\\' => 
         array (
             0 => __DIR__ . '/..' . '/lottobits/lottobits/src',
+        ),
+        'Blockchain\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/blockchain/blockchain/src',
         ),
     );
 

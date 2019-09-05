@@ -13,4 +13,5 @@ return array(
     'Lottobits\\Lottery\\' => array($vendorDir . '/lottobits/lottery/src'),
     'Lottobits\\Application\\' => array($baseDir . '/application'),
     'Lottobits\\' => array($vendorDir . '/lottobits/lottobits/src'),
+    'Blockchain\\' => array($vendorDir . '/blockchain/blockchain/src'),
 );

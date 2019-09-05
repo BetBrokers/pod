@@ -1,5 +1,43 @@
 [
     {
+        "name": "blockchain/blockchain",
+        "version": "v1.4",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/blockchain/api-v1-client-php.git",
+            "reference": "590c83b7fee24f43828bf9587fecbc97ee7f75be"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/blockchain/api-v1-client-php/zipball/590c83b7fee24f43828bf9587fecbc97ee7f75be",
+            "reference": "590c83b7fee24f43828bf9587fecbc97ee7f75be",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2017-06-13T13:15:17+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Blockchain\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Blockchain API client library",
+        "homepage": "https://github.com/blockchain/api-v1-client-php",
+        "keywords": [
+            "bitcoin",
+            "blockchain"
+        ]
+    },
+    {
         "name": "paragonie/corner",
         "version": "v2.0.0",
         "version_normalized": "2.0.0.0",

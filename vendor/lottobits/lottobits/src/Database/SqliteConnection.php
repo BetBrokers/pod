@@ -15,7 +15,7 @@ class SqliteConnection
     /**
      * @var string
      */
-    private $mySqlDbname = "phplata-blockchain";
+    private $mySqlDbname = "";
     /**
      * @var string
      */
@@ -23,7 +23,7 @@ class SqliteConnection
     /**
      * @var string
      */
-    private $mySqlPassword = "epprqootWWGURpkhh!1";
+    private $mySqlPassword = "";
     /**
      * @return \PDO
      */

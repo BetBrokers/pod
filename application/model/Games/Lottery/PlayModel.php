@@ -2,6 +2,7 @@
 namespace Lottobits\Application\Model\Games\Lottery;
 
 use Lottobits\Database\SqliteConnection;
+use Blockchain\Blockchain;
 
 class PlayModel extends SqliteConnection
 {
@@ -13,6 +14,7 @@ class PlayModel extends SqliteConnection
     {
         $this->getData(require ROOT . '/db/databases.php');
         $this->lottery = $this->getSqliteConnection('games/lottery');
+        $this->blockchain = new Blockchain();
         $this->mapper = new PlayMapper();
         
     }
@@ -67,6 +69,16 @@ class PlayModel extends SqliteConnection
         $ticket = substr($this->mapper->getHashTx(), 0, 3);
         $ticket = base_convert($ticket, 16, 10);
         $this->mapper->setTicket($ticket);
+    }
+    
+    public function getRewardByBitcoinAddress()
+    {
+        $balance = $this->blockchain->Explorer->getAddress('1AqC4PhwYf7QAyGBhThcyQCKHJyyyLyAwc')->final_balance;
+        $percent = 0.86;
+        
+        $reward = $balance * $percent;
+        
+        return $reward;
     }
 }
 

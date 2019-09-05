@@ -42,6 +42,15 @@ class TicketHelper
     
     /**
      * 
+     */
+    public function getReward()
+    {
+        return $this->play->getRewardByBitcoinAddress();
+        
+    }
+    
+    /**
+     * 
      * @return string
      */
     public function getLatestBets()

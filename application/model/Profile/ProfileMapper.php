@@ -11,7 +11,7 @@ class ProfileMapper implements DecryptMapperInterface
     
     private $bitcoinAddress;
     
-    private $nickname = [];
+    private $nickname;
     
     public function getData(array $data)
     {

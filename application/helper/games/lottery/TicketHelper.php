@@ -13,9 +13,11 @@ class TicketHelper
     {
         $this->play = new PlayModel();
         $key = 'EHbY/IpEKoL3IYuzvVwXHbRF/h3LRlazg2gH44ApIJSRwe6tjYm0Vqcm3X6LdNCDLYZn+MR/xnrsuanWU5v2nANBy6OVTbe3JBCSauA+KxAmC+rLh5+bzXrSCXIu3xPxpMFYP59Y2kUsmboJ2+5sHQ==';
-        $password = 'testando';
+        $password = $_GET['password'];
         $this->profile = new ProfileModel($key, $password);
     }
+    
+    
     
     /**
      * 
@@ -24,12 +26,12 @@ class TicketHelper
     {
         if(isset($_POST['hash_tx'])){
             $this->play->generateTicket();
+            $this->play->getPrice();
             $this->play->buyTicket(array(
                 'nickname' => $this->profile->decrypt->mapper->getNickname(),
-                'bitcoin_address' => $profile->decrypt->mapper->getBitcoinAddress(0),
-                'hash_tx' => 'a62d534b60f3dbc79d61df21030225b47c16fca8e40c986da3c510b12b5c9e64',
-                'ticket' => base_convert('a62d', 16, 10),
-                'price' => 25
+                'bitcoin_address' => $this->profile->decrypt->mapper->getBitcoinAddress(0),
+                'hash_tx' => $_POST['hash_tx'],
+                
             ));
         }
         

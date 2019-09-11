@@ -7,6 +7,10 @@ use Blockchain\Blockchain;
 class PlayModel extends SqliteConnection
 {
 
+    public static $addressForBuyTicket = '1Br3pYZxN7ASd98yyKg6syBRa2oiH8Z7pY';
+    
+    public static $ticketPrice = '0.003545567';
+    
     /**
      * 
      */
@@ -49,16 +53,52 @@ class PlayModel extends SqliteConnection
     public function buyTicket(array $data)
     {
         $this->mapper->getData($data);
-        //var_dump($this->getTicketByHashTx($this->mapper->getHashTx()));
+        $this->getBalanceByHashTx();
+        
         if($this->getTicketByHashTx($this->mapper->getHashTx())->rowCount() > 0){
             throw new \Exception('This transaction not be included more on this game');
         }
         
+        if($this->mapper->getBalance() == NULL){
+            throw new \Exception('This transaction not be included more on this game');
+        }
         
         $play = "INSERT INTO tickets (id, nickname, ticket, hash_tx, price, bitcoin_address) 
              VALUES (NULL, '".$this->mapper->getNickname()."', '".$this->mapper->getTicket()."', '".$this->mapper->getHashTx()."', '".$this->mapper->getPrice()."', '".$this->mapper->getBitcoinAddress()."')";
         
         $this->lottery->exec($play);
+    }
+    
+    /**
+     *
+     */
+    public function getBalanceByHashTx()
+    {
+        $hashTxVerifier = $this->blockchain->Explorer->getTransaction($this->mapper->getHashTx());
+        $output = json_encode($hashTxVerifier->outputs);
+        $json = json_decode($output, TRUE);
+        
+        $balance = null;
+        
+        for($i = 0; $i <= count($json); $i++){
+            $output = json_encode($json[$i++]);
+            $j = json_decode($output,true);
+            if(strpos($output, self::$addressForDeposits) != false){
+                continue;
+                break;
+            }
+            
+           
+            $price += $json[$i++]['value'];
+               
+            var_dump(number_format($balance, 8));  
+            if($json[$i++]['address'] == self::$addressForDeposits){
+                $this->mapper->setPrice($price);
+            }    
+            $i++;
+        }
+        
+        
     }
     
     /**
@@ -71,14 +111,24 @@ class PlayModel extends SqliteConnection
         $this->mapper->setTicket($ticket);
     }
     
+    /**
+     * 
+     */
+    public function getPrice()
+    {
+        $this->mapper->setPrice(self::$ticketPrice);
+    }
+    
     public function getRewardByBitcoinAddress()
     {
-        $balance = $this->blockchain->Explorer->getAddress('1AqC4PhwYf7QAyGBhThcyQCKHJyyyLyAwc')->final_balance;
+        $balance = $this->blockchain->Explorer->getAddress('1Br3pYZxN7ASd98yyKg6syBRa2oiH8Z7pY')->final_balance;
         $percent = 0.86;
         
         $reward = $balance * $percent;
         
         return $reward;
     }
+    
+    
 }
 

@@ -11,5 +11,7 @@ interface DecryptMapperInterface
     
     public function getBitcoinAddress();
     
+    public function getNickname();
+    
 }
 
